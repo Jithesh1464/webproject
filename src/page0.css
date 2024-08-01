@@ -1,0 +1,158 @@
+html, body {
+    height: 100%; /* Make sure the html and body take up the full height */
+    margin: 0; /* Remove default margin */
+}
+body {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    /*align-items: center;  Center vertically */
+    font-family: 'Monoton', cursive;
+    font-size: 150px;
+    text-align: center;
+    letter-spacing: 10px;
+    background-color: black;
+    /*background-image: url("/Project0/PICTURES/indexwebdev.jpg");*/
+}
+:root {
+  --text: hsl(0, 0%, 99%);
+  --textDim: hsl(0, 0%, 60%);
+  --background: hsl(0, 0%, 7%);
+  --primary: hsl(155, 100%, 65%);
+  --primaryBg: hsla(155, 100%, 65%, 1%);
+  --primaryHi: hsla(155, 100%, 75%, 25%);
+  --primaryFg: hsl(155, 100%, 50%);
+  --secondary: hsl(156, 51%, 14%);
+  --secondaryFg: hsl(156, 51%, 75%);
+  --secondaryBg: hsla(156, 51%, 14%, 5%);
+  --secondaryHi: hsla(156, 51%, 30%, 50%);
+  --accent: hsl(155, 100%, 94%);
+  --accentBg: hsla(155, 100%, 94%, 1%);
+  --accentHi: hsla(155, 100%, 100%, 25%);
+}
+.Orange{
+color: rgb(255, 140, 0);
+}
+.White{
+color:white;
+}
+.Green{
+color: green;
+}
+.container {
+  position: relative; /* Ensure the parent container is relatively positioned */
+}
+.creator {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-family: Anta;
+    font-size: 15px;
+    color: white;
+    margin: 10px; /* Optional, for spacing from the bottom and left edges */
+}
+.blur1{
+    height: 12rem;
+    width: 12rem;
+    top:20%;
+    right:19%;
+    background-color: var(--primary);
+    filter: blur(100px);
+    border-radius: 100px;
+    z-index: 0;
+    position: absolute;
+  }
+  .blur2{
+    height: 12rem;
+    width: 12rem;
+    top:20%;
+    right:40%;
+    background-color: white;
+    filter: blur(100px);
+    border-radius: 100px;
+    z-index: 0;
+    position: absolute;
+  }
+  .blur3{
+    height: 12rem;
+    width: 15rem;
+    top:20%;
+    left:19%;
+    background-color: orange;
+    filter: blur(100px);
+    border-radius: 100px;
+    z-index: 0;
+    position: absolute;
+  }
+  .blur3:hover,
+  .blur2:hover,
+  .blur1:hover{
+     transform: translateY(50px);
+     transition: all 0.5s ease;
+  }
+a[href="./index.html"]{
+    height: 50px;
+    width: 160px;
+    bottom:32%;
+    right:50%;
+    letter-spacing: 3px;
+    clip-path: path("M 0 25 C 0 -5, -5 0, 80 0 S 160 -5, 160 25, 165 50 80 50, 0 55, 0 25");
+    text-decoration:none ;
+    border: none;
+    border-radius: 13px;
+    background-color: var(--accentBg);
+  box-shadow: 0px -3px 15px 0px var(--accentHi) inset;
+  color: white;
+  font-family: "Anta";
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom:0%;
+  left:45%;
+  transform: translateY(0px);
+  transition: all 0.6s ease;
+}
+a[href="./index.html"]:hover {
+    opacity:60%;
+    transform: scale3d(1.2, 1.4, 0.3);
+}
+a[href="index.html"]:hover + p span.Orange,
+a[href="index.html"]:hover + p span.White,
+a[href="index.html"]:hover + p span.Green {
+    color: red; /* Change this to whatever color you want */
+}
+/*
+.enter_button{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-decoration: none;
+    color: inherit;
+    cursor:pointer ;
+    height:100px;
+    width:50px;
+    z-index: 9999;
+}
+button{
+    height:100px;
+    width:50px;
+    border: none;
+    border-radius: 13px;
+    background-color: var(--button_color);
+    clip-path: path("M 0 25 C 0 -5, -5 0, 80 0 S 160 -5, 160 25, 165 50 80 50, 0 55, 0 25");
+    box-shadow: 0px -3px 15px 0px var(--button_color) inset;
+    color: var(--button_color);
+    font-family: "Manrope";
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translateY(0px);
+    transition: all 0.2s ease;
+}*/

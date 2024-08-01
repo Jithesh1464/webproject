@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLLEGE LIST</title>
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anta" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="/src/collage.css">
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="Root" id="root"></div>
+    <div class="layout">
+        <aside class="sidebar">
+            <a id="btn-collapse" class="sidebar-collapser"><i class="ri-arrow-left-s-line"></i></a>
+            <div class="filter">
+                <form id="rankForm">
+                    <label for="college">COLLEGE:</label><br>
+                    <select name="college" id="college">
+                        <option value="" selected="selected">Choose college</option>
+                        <option value="NIT">NIT</option>
+                        <option value="iit">IIT</option>
+                        <option value="iiit">IIIT</option>
+                        <option value="gfti">GFTI</option>
+                    </select>
+                    <br><br>
+                    <label for="branch">BRANCH:</label><br>
+                    <select name="branch" id="branch">
+                        <option value="" selected="selected">Please select branch you wish</option>
+                        <option value="cse">CSE</option>
+                        <option value="ece">ECE</option>
+                        <option value="eee">EEE</option>
+                        <option value="mech">MECH</option>
+                    </select>
+                    <br><br>
+                    <label for="category">CATEGORY:</label><br>
+                    <select name="category" id="category">
+                        <option value="" selected="selected">Please select your category</option>
+                        <option value="OPEN">OPEN</option>
+                        <option value="ews">EWS</option>
+                        <option value="obc">OBC</option>
+                    </select>
+                    <br><br>
+                    <label for="rank">RANK:</label><br>
+                    <input type="text" name="rank" id="rank">
+                    <br><br><br><br>
+                    <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+            <div class="inputs-vertical">
+                <span>INPUTS</span>
+            </div>
+        </aside>
+    </div>
+    <button class="leftbar" onclick="window.location.href='./page0.html'">P<br>R<br>O<br>J<br>E<br>C<br>T<br>0<br></button>
+    <div id="navbar">
+        <div class="topnav">
+            <a href="./page0.html" >Home</a>
+            <a href="./index.html">College list</a>
+            <a href="./pbCllg.html" class="active">Probable college</a>
+            <a href="./cllgPred.html">College predictor</a>
+            <a href="./cllgInfo.html">College info</a>
+            <a href="./contact.html" >Contact</a>
+        </div>
+    </div>
+    <script src="/src/index.js"></script>
+</body>
+</html>
